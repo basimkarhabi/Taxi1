@@ -1,0 +1,117 @@
+.booking__form {
+    width: 47.5%;
+    margin-left:20px;
+    padding-top: 5px;
+  }
+  
+  .booking__form input {
+    padding: 8px 15px;
+    border: 1px solid #7c8a972a;
+    color: #7c8a97;
+    width: 100%;
+  }
+  
+  .booking__form select,
+  .textarea {
+    width: 100%;
+    padding: 5px 15px;
+    color: #7c8a97;
+    border: 1px solid #7c8a972a;
+    border-radius: 4px;
+    margin-left: 5px ;
+  }
+  .booking__form label{
+    margin-left: 9px;
+  }
+  .textarea{
+    width: 100%;
+  }
+  
+  .time__picker::before {
+    content: "Journey Time";
+    color: #7c8a97;
+    margin-right: 0.5rem;
+  }
+  
+  .textarea:focus,
+  .booking__form input:focus,
+  .booking__form select:focus {
+    outline: none;
+  }
+
+  .contact__btn {
+    padding: 7px 15px;
+    margin-bottom: 15px;
+    margin-left:10px;
+    background: #000d6b;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .messageNoti{
+    background-color: lightblue;
+    width:400px;
+    height: 70px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% ,-50%);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.208);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .messageNoti2 p{
+    margin:auto;
+
+  }
+
+  .messageNoti button{
+    color:black;  
+    height: 20px;
+    width:20px;
+    border-radius: 100%;
+    font-size: 12px;
+    border:none;
+    margin-top:5px;
+    margin-right:5px;
+
+  }
+
+  .messageNoti button:hover{ 
+    color:red;
+  }
+
+  .messageNoti2{
+    display: flex;
+    padding:60px;
+ 
+    
+  }
+  
+ .errorMsg {
+    color:red;
+  }
+  @media only screen and (max-width: 768px) {
+    .booking__form {
+      width: 100%;
+      margin-left:2px;
+      padding-left:5px;
+      padding-right: 25px;
+    }
+  
+    .booking__form input,
+    .textarea,
+    .booking__form select {
+      font-size: 0.8rem;
+    }
+
+    .contact__btn {
+      margin-bottom: 40px;
+      font-size: 0.8rem;
+    }
+  }
