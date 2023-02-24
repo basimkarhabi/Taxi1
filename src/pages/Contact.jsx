@@ -7,25 +7,6 @@ import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 const {REACT_APP_SERVICE_ID,REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY} = process.env
 
-/*
-  const socialLinks = [
-  {
-    url: "#",
-    icon: "ri-facebook-line",
-  },
-  {
-    url: "#",
-    icon: "ri-instagram-line",
-  },
-  {
-    url: "#",
-    icon: "ri-linkedin-line",
-  }, 
-];
-
-*/
-
-
 const Contact = () => {
   const [successMsg, setSuccessMsg] = useState("");
     console.log(successMsg)
