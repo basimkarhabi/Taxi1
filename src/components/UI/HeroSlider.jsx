@@ -1,21 +1,10 @@
 import React from 'react'
 import Slider from 'react-slick';
 import {Container} from 'reactstrap';
-import { Link , useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../styles/hero-slider.css";
-import BookingForm from "../../components/UI/BookingForm"
 
 const HeroSlider = () => {
-  const FormButton = ({to}) =>{
-    const navigate = useNavigate();
-      return (
-        <button className= "my-button" onClick={()=>{navigate(`/${to}`) }}>
-          Take me to {to==="" ? <BookingForm /> : to}
-
-        </button>
-        
-        )
-  }
 
   const settings = {
     fade: true,
