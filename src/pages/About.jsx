@@ -3,7 +3,6 @@ import Helmet from '../components/Helmet/Helmet';
 import CommonSection from '../components/UI/CommonSection';
 import AboutSection  from '../components/UI/AboutSection';
 import {Container,Row,Col} from "reactstrap";
-import driveImg from "../assets/all-images/drive.jpg";
 import "../styles/about.css";
 
 const About = () => {
@@ -15,7 +14,7 @@ const About = () => {
           <Row>
             <Col lg="6" md="6" sm="12">
               <div className="about__page-img">
-                <img src={driveImg} alt="" className="w-100 rounded-3" />
+                <img src="https://i.ibb.co/VWL3WY0/drive.jpg" alt="drive" className="w-100 rounded-3" />
               </div>
             </Col>
 
