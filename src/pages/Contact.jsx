@@ -1,5 +1,4 @@
 import React , {useState}from 'react'
-import { Link } from "react-router-dom";
 import { Container, Row, Col, Form, FormGroup } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
@@ -8,7 +7,8 @@ import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 const {REACT_APP_SERVICE_ID,REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY} = process.env
 
-const socialLinks = [
+/*
+  const socialLinks = [
   {
     url: "#",
     icon: "ri-facebook-line",
@@ -22,6 +22,8 @@ const socialLinks = [
     icon: "ri-linkedin-line",
   }, 
 ];
+
+*/
 
 
 const Contact = () => {
@@ -112,22 +114,6 @@ const Contact = () => {
                       <h6 className="mb-0 fs-6">Email:</h6>
                       <p className="section__description mb-0">Majatik@yahoo.com</p>
                     </div>
-            {/*
-                    <h6 className="fw-bold mt-4">Follow Us</h6>
-
-                    <div className=" d-flex align-items-center gap-4 mt-3">
-                      {socialLinks.map((item, index) => (
-                        <Link
-                          to={item.url}
-                          key={index}
-                          className="social__link-icon"
-                        >
-                          <i class={item.icon}></i>
-                        </Link>
-                      ))}
-                    </div>
-
-                    */}
                   </div>
                 </Col>
               </Row>
