@@ -40,7 +40,7 @@ const Footer = () => {
                 </h1>
               </div>
               <p className="footer__logo-content">
-              Whol city tour :we can go to the Los Angeles-and any place we want all the day
+              Whole city tour :we can go to the Los Angeles-and any place we want all the day
             </p>
               </Col>
               <Col lg='4' md='4' sm='6' >
