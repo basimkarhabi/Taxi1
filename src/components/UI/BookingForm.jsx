@@ -101,15 +101,15 @@ console.log(successMsg)
         
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="date" placeholder="JourneyDate" id="journeyDate"   
-                {...register("journeyDate", {valueAsDate: true})}
+          <input type="date" id="journeyDate" placeholder="journeyDate"   
+                {...register("journeyDate",{valueAsDate: true})}
             />
          {errors.journeyDate && (<p className="errorMsg">{errors.JourneyDate.message}</p>)}   
       </FormGroup>
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="time" placeholder="Journey Time" id ="timePicker"
-          {...register("timePicker", { required: "*Please select at-least one Time Picker"},{valueAsDate: true})}
+        <input type="time"  id ="timePicker"
+          {...register("timePicker", {required: "*Please select at-least one Time Picker"},{valueAsDate: true})}
 
         />
         {errors.timePicker && (<p className="errorMsg">{errors.timePicker.message}</p>)}   
