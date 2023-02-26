@@ -30,13 +30,13 @@
   .time__picker::before {
     content: "Journey Time";
     color: #161615;
-    margin-right: 0.5rem;
+    margin-left: 12px;
   }
   
   .date__picker::before{
     content: "Journey Date";
     color: #161615;
-    margin-right: 0.5rem;
+    margin-left: 12px;
   }
   
   .textarea:focus,
@@ -129,6 +129,18 @@
       color: green;
       font-style: italic;
 
+    }
+    
+    .time__picker::before {
+      content: "Journey Time";
+      color: #161615;
+      margin-left: 12px;
+    }
+    
+    .date__picker::before{
+      content: "Journey Date";
+      color: #161615;
+      margin-left: 12px;
     }
     
 
