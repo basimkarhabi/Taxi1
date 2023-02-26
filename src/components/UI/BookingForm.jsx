@@ -114,6 +114,7 @@ console.log(successMsg)
                 locale="en-GB"
                 showWeekNumbers
                 placeholderText="Select a weekday"
+                calendarStartDay={3}
 
             />
             {/*<Label>My Date</Label>*/}
@@ -121,11 +122,12 @@ console.log(successMsg)
       </FormGroup>
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="time"  id ="timePicker" placeholder="time"
+        <input type="time"  id ="timePicker" 
           {...register("timePicker", {required: "*Please select at-least one Time Picker"},{valueAsDate: true})}
           showTimeSelect
           dateFormat="Pp"
-
+          placeholder="time placeholder"
+          name="time"
 
         />
       
