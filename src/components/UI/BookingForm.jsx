@@ -61,7 +61,7 @@ console.log(successMsg)
      
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4 mt-1">
-            <input type="text" placeholder="LastName" id="lastName"
+            <input type="text" placeholder="Last Name" id="lastName"
                   {...register("lastName", 
                       {required: "*LastName is required.",message:"Enter your Last Name error message"})}   
               />
@@ -79,9 +79,9 @@ console.log(successMsg)
       </FormGroup>
   
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-            <input type="number" placeholder="PhoneNumber" name="phoneNumber"
+            <input type="number" placeholder="Phone Number" name="phoneNumber"
                   {...register("phoneNumber", {required: "* Phone Number is required.",
-                      validate: {checkLength: (value)=>value.length >=10}
+                      validate: {checkLength: (value)=>value.length >=9}
                    })}        
             />
           {errors.phoneNumber && (<p className="errorMsg">{errors.phoneNumber.message}</p>)}      

@@ -59,9 +59,9 @@ const Footer = () => {
             <div className="mb-4">
               <h5 className="footer__link-title mb-4">Head Office</h5>
               <p className="office__info">849 SAN REMO,<br/> IRVIEN CALIFORNIA , 92606</p>
-              <p className="office__info">CERTIFICATE NO: PSG0042525- TCP B</p>
+              <p className="office__info">CERTIFICATE NO: PSG0042525- TCP </p>
               <p className="office__info">Phone : 1714-873-2944 <br/></p>
-              <p className="office__info">Phone : +949-998-1977</p>
+              <p className="office__info">Phone : 949-998-1977</p>
               <p className="office__info">Email: Majatik@yahoo.com</p>
               <p className="office__info">Office Time: 0am - 24pm</p>
             </div>
