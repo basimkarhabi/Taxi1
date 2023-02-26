@@ -4,6 +4,7 @@ import "../../styles/booking-form.css";
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import MessageNoti from "./MessageNoti.jsx"
+import DatePicker from "react-datepicker";
 
 
 const {REACT_APP_SERVICE_ID,REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY} = process.env
@@ -17,9 +18,8 @@ const [hidden,setHidden]=useState(false)
 //Data 
 
 const [startDate,setStartDate]=useState(new Date())
-function onChangeDateHandler(value){
-  setStartDate(value)
-}
+function onChangeDateHandler(date){
+<DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />}
 
 
 console.log(successMsg)
