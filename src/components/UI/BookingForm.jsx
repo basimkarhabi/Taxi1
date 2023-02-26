@@ -105,7 +105,7 @@ console.log(successMsg)
         
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="date" id="journeyDate" placeholder="journeyDate"   
+          <input type="date" id="journeyDate" placeholder="date placeholdere"   
                 {...register("journeyDate",{valueAsDate: true})}
                 dateformat="MMM dd yyyy"
                 selected={startDate}
@@ -115,13 +115,14 @@ console.log(successMsg)
                 showWeekNumbers
                 placeholderText="Select a weekday"
                 calendarStartDay={3}
+                name="date"
 
             />
             {/*<Label>My Date</Label>*/}
          {errors.journeyDate && (<p className="errorMsg">{errors.JourneyDate.message}</p>)}   
       </FormGroup>
 
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
+      <FormGroup className="booking__form d-inline-block me-4 mb-4 time__picker">
         <input type="time"  id ="timePicker" 
           {...register("timePicker", {required: "*Please select at-least one Time Picker"},{valueAsDate: true})}
           showTimeSelect
