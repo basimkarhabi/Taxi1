@@ -1,5 +1,5 @@
 import React , { useState,} from 'react';
-import {FormGroup } from "reactstrap";
+import {FormGroup} from "reactstrap";
 import "../../styles/booking-form.css";
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
@@ -16,13 +16,17 @@ const [hidden,setHidden]=useState(false)
 
 //Data 
 
+const [startDate,setStartDate]=useState(new Date())
+function onChangeDateHandler(value){
+  setStartDate(value)
+}
+
 
 console.log(successMsg)
  const submit = (data,e) => {
        e.preventDefault();
 
        console.log(data);
-
        setHidden(true)
 
        setSuccessMsg("your form is sending ")
@@ -105,16 +109,19 @@ console.log(successMsg)
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
           <input type="date" id="journeyDate" placeholder="journeyDate"   
                 {...register("journeyDate",{valueAsDate: true})}
-                dateformat="MM-dd-yy"
+                dateformat="MMM dd yyyy"
+                selected={startDate}
+                onChange={onChangeDateHandler}
 
             />
+            {/*<Label>My Date</Label>*/}
          {errors.journeyDate && (<p className="errorMsg">{errors.JourneyDate.message}</p>)}   
       </FormGroup>
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
         <input type="time"  id ="timePicker" placeholder="time"
           {...register("timePicker", {required: "*Please select at-least one Time Picker"},{valueAsDate: true})}
-          
+
 
         />
       
