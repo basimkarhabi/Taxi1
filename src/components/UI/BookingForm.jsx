@@ -105,7 +105,7 @@ console.log(successMsg)
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
           <input type="date" id="journeyDate" placeholder="journeyDate"   
                 {...register("journeyDate",{valueAsDate: true})}
-                format="mm-dd-yy"
+                dateformat="MM-dd-yy"
 
             />
          {errors.journeyDate && (<p className="errorMsg">{errors.JourneyDate.message}</p>)}   
@@ -114,8 +114,10 @@ console.log(successMsg)
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
         <input type="time"  id ="timePicker" placeholder="time"
           {...register("timePicker", {required: "*Please select at-least one Time Picker"},{valueAsDate: true})}
+          
 
         />
+      
         {errors.timePicker && (<p className="errorMsg">{errors.timePicker.message}</p>)}   
       </FormGroup>
 
