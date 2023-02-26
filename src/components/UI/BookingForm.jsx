@@ -111,6 +111,9 @@ console.log(successMsg)
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}                
                 showIcon
+                locale="en-GB"
+                showWeekNumbers
+                placeholderText="Select a weekday"
 
             />
             {/*<Label>My Date</Label>*/}
