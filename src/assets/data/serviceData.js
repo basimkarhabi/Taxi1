@@ -24,7 +24,7 @@ const serviceData = [
       id: 4,
       title: "Fast & Easy Booking",
       icon: "ri-timer-flash-line",
-      desc: "you can call me at my phone number is1 714-873-2944 or 1949-998-1977"
+      desc: "you can call me at my phone number is 1714-873-2944 or 1949-998-1977"
     },
   
     {
