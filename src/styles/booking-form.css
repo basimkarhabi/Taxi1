@@ -33,6 +33,12 @@
     margin-right: 0.5rem;
   }
   
+  .date__picker::before{
+    content: "Journey Date";
+    color: #161615;
+    margin-right: 0.5rem;
+  }
+  
   .textarea:focus,
   .booking__form input:focus,
   .booking__form select:focus {
@@ -114,4 +120,16 @@
       margin-bottom: 40px;
       font-size: 0.8rem;
     }
+
+    input:placeholder-shown {
+      border-color: pink;
+    }
+
+    input::placeholder {
+      color: green;
+      font-style: italic;
+
+    }
+    
+
   }

@@ -104,7 +104,7 @@ console.log(successMsg)
 
         
 
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
+      <FormGroup className="booking__form d-inline-block me-4 mb-4 date__picker">
           <input type="date" id="journeyDate" placeholder="date placeholdere"   
                 {...register("journeyDate",{valueAsDate: true})}
                 dateformat="MMM dd yyyy"
