@@ -81,7 +81,7 @@ console.log(successMsg)
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
             <input type="number" placeholder="PhoneNumber" name="phoneNumber"
                   {...register("phoneNumber", {required: "* Phone Number is required.",
-                      validate: {checkLength: (value)=>value.length >=12}
+                      validate: {checkLength: (value)=>value.length >=10}
                    })}        
             />
           {errors.phoneNumber && (<p className="errorMsg">{errors.phoneNumber.message}</p>)}      
