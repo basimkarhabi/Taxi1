@@ -4,7 +4,7 @@ import "../../styles/booking-form.css";
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import MessageNoti from "./MessageNoti.jsx"
-import DatePicker from "react-datepicker";
+//import DatePicker from "react-datepicker";
 
 
 const {REACT_APP_SERVICE_ID,REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY} = process.env
@@ -105,7 +105,7 @@ console.log(successMsg)
         
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4 date__picker">
-          <input type="date" id="journeyDate" placeholder="date placeholdere"   
+          <input type="date" id="journeyDate" placeholder="place holdere"   
                 {...register("journeyDate",{valueAsDate: true})}
                 dateformat="MMM dd yyyy"
                 selected={startDate}
@@ -124,7 +124,7 @@ console.log(successMsg)
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4 time__picker">
         <input type="time"  id ="timePicker" 
-          {...register("timePicker", {required: "*Please select at-least one Time Picker"},{valueAsDate: true})}
+          {...register("timePicker",{valueAsDate:true})}
           showTimeSelect
           dateFormat="Pp"
           placeholder="time placeholder"
