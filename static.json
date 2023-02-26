@@ -1,0 +1,6 @@
+{
+    "clean_urls": false,
+    "static_paths": {
+      "/**": "build/index.html"
+    }
+  }
