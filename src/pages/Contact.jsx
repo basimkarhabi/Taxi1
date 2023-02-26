@@ -84,11 +84,11 @@ const Contact = () => {
                     </p>
                     <div className=" d-flex align-items-center gap-2">
                       <h6 className="fs-6 mb-0">Phone1:</h6>
-                      <p className="section__description mb-0">+0714 -873-2944</p>
+                      <p className="section__description mb-0">1714-873-2944</p>
                     </div>
                     <div className=" d-flex align-items-center gap-2">
                     <h6 className="fs-6 mb-0">Phone2:</h6>
-                      <p className="section__description mb-0"> +949-998-1977</p>
+                      <p className="section__description mb-0"> 949-998-1977</p>
                     </div>
 
                     <div className=" d-flex align-items-center gap-2">
