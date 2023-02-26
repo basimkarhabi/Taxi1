@@ -18,8 +18,6 @@ const [hidden,setHidden]=useState(false)
 //Data 
 
 const [startDate,setStartDate]=useState(new Date())
-function onChangeDateHandler(date){
-<DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />}
 
 
 console.log(successMsg)
@@ -111,7 +109,8 @@ console.log(successMsg)
                 {...register("journeyDate",{valueAsDate: true})}
                 dateformat="MMM dd yyyy"
                 selected={startDate}
-                onChange={onChangeDateHandler}
+                onChange={(date) => setStartDate(date)}                
+                showIcon
 
             />
             {/*<Label>My Date</Label>*/}
@@ -121,6 +120,8 @@ console.log(successMsg)
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
         <input type="time"  id ="timePicker" placeholder="time"
           {...register("timePicker", {required: "*Please select at-least one Time Picker"},{valueAsDate: true})}
+          showTimeSelect
+          dateFormat="Pp"
 
 
         />
