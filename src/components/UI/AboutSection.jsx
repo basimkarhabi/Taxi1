@@ -17,12 +17,12 @@ const AboutSection = ({aboutClass}) => {
                     <div className="about__section-item d-flex align-items-start mt-5">           
                       <p className="section__description d-flex align-items-start gap-2">
                       <i class="ri-checkbox-circle-line "></i> 
-                      City transfer :Ivan take you and stay with you at all Orange County and                               Los Angeles city
+                      City transfer :We can take you and stay with you at all Orange County and                               Los Angeles city
                       </p>
                       <p className="section__description d-flex align-items-start gap-2">
                         <i class="ri-checkbox-circle-line"></i> 
-                        Fast and easy booking you can call me at my phone number is <br/> 1 714-873-2944 
-                        <br/>or<br/> 1949-998-1977
+                        Fast and easy booking you can call me at my phone number is <br/>  714-873-2944 
+                        <br/>or<br/> 949-998-1977
                       </p>
                     </div>    
                 </Col>
