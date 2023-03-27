@@ -34,4 +34,5 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://www.atiketransportation.com/
+Allow: /
+Sitemap: https://www.atiketransportation.com/sitemap.xml
