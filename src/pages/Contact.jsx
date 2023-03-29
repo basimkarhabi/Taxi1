@@ -35,8 +35,8 @@ const Contact = () => {
     };
 
   return (
-    <Helmet title="Contact">
-        <CommonSection title="Contact" />
+    <Helmet title="contact">
+        <CommonSection title="contact" />
           <section>
             <Container>
               <Row>

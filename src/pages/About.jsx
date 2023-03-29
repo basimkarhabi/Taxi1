@@ -6,7 +6,10 @@ import {Container,Row,Col} from "reactstrap";
 import "../styles/about.css";
 
 const About = () => {
-  return <Helmet title = 'About'>
+  return <Helmet title = 'about'>
+          <title>about</title>
+          <meta name="description" content="transportation Taxi in LosAnglos" />
+          <link rel ="canonical" href="/about"/>
          <CommonSection title="About Us" />
       <AboutSection aboutClass="aboutPage" />
       <section className="about__page-section">

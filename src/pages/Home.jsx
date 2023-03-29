@@ -4,9 +4,10 @@ import Helmet from '../components/Helmet/Helmet'
 import { Container, Row, Col } from "reactstrap";
 import AboutSection from '../components/UI/AboutSection.jsx';
 import ServicesList from '../components/UI/ServicesList.jsx';
+//import {Helmet} from 'react-helmet-async'
 
 const Home = () => {
-  return <Helmet title='Home'>
+  return <Helmet title='home'>
           <section className="p-0 hero__slider-section">
               <HeroSlider />      
           </section>
