@@ -8,8 +8,11 @@ import ServicesList from '../components/UI/ServicesList.jsx';
 
 const Home = () => {
   return <Helmet title='home'>
+      <title>home</title>
+      <meta name= "description" content="transposition in los Angeles "/>
           <section className="p-0 hero__slider-section">
-              <HeroSlider />      
+          <link rel='canonical' href='https://www.atiketransportation.com/' />    
+          <HeroSlider />      
           </section>
       <AboutSection />
   <section>

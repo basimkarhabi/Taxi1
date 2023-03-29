@@ -9,7 +9,7 @@ const About = () => {
   return <Helmet title = 'about'>
           <title>about</title>
           <meta name="description" content="transportation Taxi in LosAnglos" />
-          <link rel ="canonical" href="/about"/>
+          <link rel ="canonical" href="https://www.atiketransportation.com/about"/>
          <CommonSection title="About Us" />
       <AboutSection aboutClass="aboutPage" />
       <section className="about__page-section">

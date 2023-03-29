@@ -36,6 +36,9 @@ const Contact = () => {
 
   return (
     <Helmet title="contact">
+      <title>contact</title>
+          <meta name="description" content="transportation Taxi in LosAnglos" />
+          <link rel ="canonical" href="https://www.atiketransportation.com/contact"/>
         <CommonSection title="contact" />
           <section>
             <Container>
