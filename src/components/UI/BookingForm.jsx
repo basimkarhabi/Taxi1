@@ -58,8 +58,7 @@ console.log(successMsg)
 
       </FormGroup>
 
-     
-
+    
       <FormGroup className="booking__form d-inline-block me-4 mb-4 mt-1">
             <input type="text" placeholder="Last Name" id="lastName"
                   {...register("lastName", 

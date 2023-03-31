@@ -21,8 +21,11 @@ const HeroSlider = () => {
      <div className="slider__item slider__item-01 mt0">
         <Container>
           <div className="slider__content ">
+            {/*
             <h4 className="text-light mb-4">For  $150 Per Day</h4>
             <h2 className="text-light mb-3">Just 150$</h2>
+            */}
+            
             <Link to = {"/BookingForm"}  className="btn reserve__btn mt-4">Book Now</Link>            
           </div>
         </Container>
@@ -31,8 +34,11 @@ const HeroSlider = () => {
       <div className="slider__item slider__item-02 mt0">
         <Container>
           <div className="slider__content ">
-          <h4 className="text-light mb-4">For  $150 Per Day</h4>
+           {/*
+             <h4 className="text-light mb-4">For  $150 Per Day</h4>
             <h2 className="text-light mb-3">Just 150$</h2>
+            */} 
+
             <Link to = {"/BookingForm"}  className="btn reserve__btn mt-4">Book Now</Link>            
 
           </div>
@@ -42,8 +48,11 @@ const HeroSlider = () => {
       <div className="slider__item slider__item-03 mt0">
         <Container>
           <div className="slider__content ">
-          <h4 className="text-light mb-4">For  $150 Per Day</h4>
+            {/*
+             <h4 className="text-light mb-4">For  $150 Per Day</h4>
             <h2 className="text-light mb-3">Just 150$</h2>
+            */}
+         
             <Link to = {"/BookingForm"}  className="btn reserve__btn mt-4">Book Now</Link>            
 
           </div>
