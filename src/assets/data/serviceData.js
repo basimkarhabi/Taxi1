@@ -42,4 +42,53 @@ const serviceData = [
     },
   ];
   
-  export default serviceData;
+export default serviceData;
+  
+
+export let eventsData = [
+  {
+    id: 0,
+    image:"https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg",
+    title: "Design & React Meetup",
+    location: "Aug 16, 6:30PM @ Seattle, WA",
+    description:"Join us to learn and share newbie React knowledge"
+  },
+  {
+    id: 1,
+    image:"https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg",
+    title: "Design & React Meetup",
+    location: "Aug 19, 7:00PM @ Tallin, Estonia",
+    description: "Join us to learn and share newbie React knowledge"
+  },
+  {
+    id: 2,
+    image:"https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg",
+    title: "Design & React Meetup",
+    location: "Aug 22, 6:00PM @ Vancouver, BC",
+    description: "Join us to learn and share newbie React knowledge"
+  },
+  {
+    id: 3,
+    image:"https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg",
+    title: "A card with no image",
+    location: "Aug 22, 6:00PM @ Vancouver, BC",
+        description: "Join us to learn and share newbie React knowledge"
+
+  },
+  {
+    id: 4,
+    image:"https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg",
+    title: "Design & React Meetup",
+    location: "Aug 24, 6:00PM @ Osaka, JP",
+    description: "Join us to learn and share newbie React knowledge"
+
+  },
+  {
+    id: 5,
+    image:"https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg",
+    title: "Another card with no image",
+    location: "Aug 22, 6:00PM @ Vancouver, BC",
+        description: "Join us to learn and share newbie React knowledge"
+
+  }
+];
