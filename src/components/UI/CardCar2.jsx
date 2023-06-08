@@ -77,8 +77,8 @@ const items = [
 function CardCar2()
 {
     return (
-        <div>
-            <h1>
+        <div >
+            <h1 className="Cardheadertext">
                 Whats is your type Today ?
             </h1>
 
