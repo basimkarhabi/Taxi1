@@ -1,6 +1,8 @@
 import React from 'react'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import "../../styles/cardCar2.css"
+
 
 const responsive = {
     0: { items: 1 },
@@ -21,10 +23,10 @@ const items = [
         <img src="https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg" />
         <div className="card-body m-2" >
             <div tag="h5" className="card-title">
-                <h5>Design & React Meetup </h5>
+                <h5>Business class</h5>
             </div>
             <div className=" card-text">
-                <p>Join us to learn and share newbie React knowledg
+                <p>If you are searching for a dependable vehicle provider to or from LAX Airport, you’ve come to the proper place
                 </p>
             </div>
             <a href="#" className="btn btn-primary">
@@ -33,28 +35,34 @@ const items = [
         </div>
 
     </div>,
-    <div className="item" data-value="2">        <img src="https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg" />
+    <div className="item" data-value="2">
+        <img className="marcedesImg2" src="https://i.ibb.co/Yk6gdGZ/mercedes-benz-suv-gl550-651x346-removebg-preview.jpg"
+            alt="mercedes-benz-suv"
+        />
         <div className="card-body m-2" >
             <div tag="h5" className="card-title">
-                <h5>Design & React Meetup </h5>
+                <h5>SUV class </h5>
             </div>
             <div className=" card-text">
-                <p>Join us to learn and share newbie React knowledg
-                </p>
+                <p>We’ve been supplying non-public airport transfers for decades.</p>
             </div>
             <a href="#" className="btn btn-primary">
                 Booking
             </a>
         </div>
 
-    </div>,
-    <div className="item" data-value="3">        <img src="https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg" />
+    </div >,
+    <div className="item" data-value="3">
+        <img
+            className="marcedesImg3"
+            src="https://i.ibb.co/RYtZ6xs/mercedes-eclass-gross.jpg"
+            alt="mercedes-eclass-gross" />
         <div className="card-body m-2" >
             <div tag="h5" className="card-title">
-                <h5>Design & React Meetup </h5>
+                <h5>First class</h5>
             </div>
             <div className=" card-text">
-                <p>Join us to learn and share newbie React knowledg
+                <p> Our govt sedans, SUVs and limos are at your disposal additionally for different occasions: company events, point-to-point transfers, night-outs in the town, wine tours, you title it. Our corporation will provide you the VIP attention and non-public carrier you deserve
                 </p>
             </div>
             <a href="#" className="btn btn-primary">
@@ -63,36 +71,7 @@ const items = [
         </div>
 
     </div>,
-    <div className="item" data-value="4">        <img src="https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg" />
-        <div className="card-body m-2" >
-            <div tag="h5" className="card-title">
-                <h5>Design & React Meetup </h5>
-            </div>
-            <div className=" card-text">
-                <p>Join us to learn and share newbie React knowledg
-                </p>
-            </div>
-            <a href="#" className="btn btn-primary">
-                Booking
-            </a>
-        </div>
 
-    </div>,
-    <div className="item" data-value="5">        <img src="https://i.ibb.co/bzfmHSw/Cadillac-xtc.jpg" />
-        <div className="card-body m-2" >
-            <div tag="h5" className="card-title">
-                <h5>Design & React Meetup </h5>
-            </div>
-            <div className=" card-text">
-                <p>Join us to learn and share newbie React knowledg
-                </p>
-            </div>
-            <a href="#" className="btn btn-primary">
-                Booking
-            </a>
-        </div>
-
-    </div>,
 ];
 
 function CardCar2()
@@ -100,7 +79,7 @@ function CardCar2()
     return (
         <div>
             <h1>
-                Choues Your Car
+                Whats is your type Today ?
             </h1>
 
             <AliceCarousel
