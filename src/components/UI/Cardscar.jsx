@@ -1,93 +1,59 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "../../styles/cardcar.css";
 import
 {
-    Card, CardBody, CardTitle, CardSubtitle, CardText, CardLink, CarouselControl, CarouselItem, CarouselIndicators, Carousel
+    CarouselControl, CarouselItem, CarouselIndicators, Carousel, Row, Col
 
 } from 'reactstrap';
-import Slider from 'react-slick'
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
+// import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 function Cardscar(props)
 {
 
-    const NextArrow = ({ onClick }) =>
-    {
-        return (
-            <div className="arrow next" onClick={onClick}  >
-                <FaArrowRight />
-            </div>
-        )
-    }
+    const responsive = {
+        0: { items: 1 },
+        568: { items: 6 },
+        1024: { items: 3 },
+    };
+
+
+    const handleDragStart = (e) => e.preventDefault();
 
 
 
-    const PrevArrow = ({ onClick }) =>
-    {
-        return (
-            <div className="arrow prev" onClick={onClick}   >
-                <FaArrowLeft />
-
-            </div>
-        )
-    }
-
-    const [imageIndex, setImageIndex] = useState(0)
-
-    const setting = {
-        infinite: true,
-        lazyload: true,
-        speed: 300,
-        slideesToshadow: 3,
-        centerMode: true,
-        centerPadding: 0,
-        nextArrow: <NextArrow />,
-        prevArrow: <prevArrow />,
-        beforeChange: (current, next) => setImageIndex(next)
-
-
-    }
 
     return (
-        <div className="card-container1">
-            <Slider {...setting}>
+        <div className=" card-container1 row m-4">
+
+            <div className="card-container1 d-inline-flex ">
                 {props.data.map((value, index) => (
-
-                    <div className="card-container" key={index}>
-
-                        <Card className="card">
-                            <img className={index === imageIndex ? "slide activeSlide" : "slide"}
+                    <div className="col-md-2 p-2 d-inline" key={index} >
+                        <div className="card  " >
+                            <img
                                 className="card-img"
                                 alt="Card car"
                                 src={value.image}
 
-                            /></Card>
-                        <CardBody >
-                            <CardTitle tag="h5" className="card-title">
-                                {value.title}
-                            </CardTitle>
-                            <CardSubtitle
-                                className="mb-2 text-muted"
-                                tag="h6"
-                            >
-                            </CardSubtitle>
-                            <CardText className="card-description">
-                                {value.description}
-                            </CardText>
-                            <CardLink href="cardPage" className="card-link">
-                                Booking
-                            </CardLink>
-                        </CardBody>
+                            />
+                            <div className="card-body m-2" >
+                                <div tag="h5" className="card-title">
+                                    <h5>{value.title} </h5>
+                                </div>
+                                <div className=" card-text">
+                                    {value.description}
+                                </div>
+                                <a href="#" className="btn btn-primary">
+                                    Booking
+                                </a>
+                            </div>
+                        </div>
 
                     </div >
-
                 ))
 
                 }
-            </Slider>
-
-
-
+            </div>
         </div>
 
     )

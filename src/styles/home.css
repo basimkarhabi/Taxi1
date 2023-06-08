@@ -1,9 +1,8 @@
 .home-cards {
-    width: 80%;
-    text-align: center;
-    margin-left: 10%;
-}
+    background-color: black;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
 
-.home-cards>.card-container {
-    display: inline-block;
 }

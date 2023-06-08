@@ -5,10 +5,10 @@ import { Container, Row, Col } from "reactstrap";
 import AboutSection from '../components/UI/AboutSection.jsx';
 import ServicesList from '../components/UI/ServicesList.jsx';
 //import {Helmet} from 'react-helmet-async'
-import Cardscar from '../components/UI/Cardscar.jsx'
+// import Cardscar from '../components/UI/Cardscar.jsx'
 import { eventsData } from "../assets/data/serviceData.js";
 import "../styles/home.css"
-
+import CardCar2 from "../components/UI/CardCar2.jsx"
 
 const Home = () =>
 {
@@ -20,8 +20,13 @@ const Home = () =>
       <HeroSlider />
     </section>
     <AboutSection />
-    <section className="home-cards">
-      <Cardscar data={eventsData} />
+    <section>
+      <CardCar2 data={eventsData} />
+    </section>
+
+    <section >
+      {/* <Cardscar data={eventsData} /> */}
+
     </section>
     <section>
       <Container>
