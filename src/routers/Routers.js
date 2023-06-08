@@ -6,7 +6,7 @@ import About from "../pages/About";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import BookingForm from "../components/UI/BookingForm"
-
+import PrivacyPolicy from "../pages/PrivacyPolicy.jsx"
 
 const Routers = () => {
   return <Routes>
@@ -16,7 +16,8 @@ const Routers = () => {
       {/*<Route path="/home" element={<Home />} />*/}
       <Route path="/" element={<Home/>} reloadDocument/>
       <Route path="/home" element={<Home />} reloadDocument/>
-      <Route path="/about" element={<About />} reloadDocument/>
+    <Route path="/about" element={<About />} reloadDocument />
+    <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/BookingForm" element={<BookingForm />} />
       <Route path="*" element={<NotFound />} />  
